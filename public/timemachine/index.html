@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <title>What is wrong with Time Machine?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="description" content="What is wrong with Time Machine? - Vimalin Documentation ">
+  
+  <!-- ** CSS Plugins Needed for the Project ** -->
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://vimalindoc.kasiban.com/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="https://vimalindoc.kasiban.com/plugins/themify-icons/themify-icons.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="https://vimalindoc.kasiban.com/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <style>
+  :root{
+    --primary-color:#2979a2;
+    --body-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+    --light-color:#f8f9fa;
+    --font-family:Lato;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="https://vimalindoc.kasiban.com/css/style.min.css" rel="stylesheet" media="screen"/>
+  
+<!-- ** JS Plugins Needed for the Project ** -->
+
+<!-- jquiry -->
+<script src="https://vimalindoc.kasiban.com/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="https://vimalindoc.kasiban.com/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://vimalindoc.kasiban.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="https://vimalindoc.kasiban.com/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+
+  
+
+  <!-- create /layouts/partials/overrides/header.html in your own theme or root directory to add your custom content here -->
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://vimalindoc.kasiban.com/images/logo.jpeg" />
+  
+    
+    
+      <meta name="twitter:image" content="https://vimalindoc.kasiban.com/images/logo.jpeg"/>
+      <meta name="twitter:card" content="summary">
+    
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    
+  
+  <meta property="og:image:type" content="image/jpeg">
+
+<meta name="twitter:title" content="What is wrong with Time Machine?"/>
+<meta name="twitter:description" content="There’s quite a list of reasons for this. Bear with me for a bit."/>
+
+
+
+<meta property="og:title" content="What is wrong with Time Machine?" />
+<meta property="og:description" content="There’s quite a list of reasons for this. Bear with me for a bit." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vimalindoc.kasiban.com/timemachine/" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What is wrong with Time Machine?"/>
+<meta name="twitter:description" content="There’s quite a list of reasons for this. Bear with me for a bit."/>
+
+
+</head>
+
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <img class="img-fluid" src="https://vimalindoc.kasiban.com/android-chrome-192x192.png" alt="Vimalin Documentation">
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://vimalindoc.kasiban.com/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://vimalindoc.kasiban.com/about">about</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Vimalin for Fusion
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos">Vimalin for MacOS</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/install">Installation Vimalin</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/config">Configuration Vimalin</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/makebackups">Make Backups vmware</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/managebackup">Managing Backups vmware</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Vimalin for Windows
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows">Vimalin for Workstation</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/install">Installation</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/config">Configuration</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/makebackups">Make Backups</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/managebackup">Managing Backups</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://vimalindoc.kasiban.com/faq">FAQ</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+        <a class="back-btn" href="/" aria-label="back"></a>
+          <ul class="list-styled">
+            
+            
+              
+            
+              
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/timemachine/" title="What is wrong with Time Machine?" class="sidelist
+  active">
+  <a href="https://vimalindoc.kasiban.com/timemachine/">
+    What is wrong with Time Machine?
+  </a>
+  
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5">What is wrong with Time Machine?</h2>
+          
+          <div class="content"><h2 id="why-is-time-machine-not-good-for-making-backups-of-virtual-machines">Why is Time Machine not good for making backups of Virtual Machines?</h2>
+<h3 id="what-is-wrong-with-time-machine">What is wrong with Time Machine?</h3>
+<p>Time Machine is an incredibly nice backup program. Basically it is a matter of set and forget. That is pretty amazing and makes it wonderful for many people.</p>
+<p>Unfortunately however, it is not very suitable for keeping correct backups of your virtual machines.</p>
+<p>There’s quite a list of reasons for this. Bear with me for a bit.</p>
+<h3 id="backup-while-running-a-vm">Backup while running a VM</h3>
+<p>Let’s see what makes up a virtual machine. A virtual machine consists of a set of files. Some of these files, the virtual disks, are quite large. We’re talking gigabytes here. When your virtual machine is running while TM makes a backup, it might end up being corrupt.</p>
+<p>The reason for that is that the virtual machine can still write data to files while the backup process runs. In other words, the file written out as backup is different from what it is on your machine. That is pretty bad for a backup.</p>
+<p>In the most recent versions of macOS, the actual copying of a running VM is less dangerous due to APFS disk snapshots. Sadly this doesn’t mean that your backups are safe or that TM is the right tool for the job. You will still lose the active state of the VM (RAM is not copied) and the backup will be like you pulled the power plug on a running machine. On top of that APFS snapshots have their own issues. See more in the excellent Time Machine series by Howard Oakley: <a href="https://eclecticlight.co/2020/03/02/time-machine-15-large-files-including-vms/">Time Machine 15: Large files including VMs</a></p>
+<h3 id="changes-in-large-files">Changes in large files</h3>
+<p>Another issue is that virtual disks are large binary files. This means that when Time Machine makes a backup, it will see the whole virtual disk has changed even if you only changed a small file.
+So pretend that you just saved a small document. The file you changed is .. maybe 1MB in size. The update to your Time Machine backup however is gigabytes.</p>
+<p>So you do the proper thing and you exclude virtual machines from backups. This is one of the tips in <a href="https://kb.vmware.com/s/article/1013628">VMware’s Knowledge base best practices for virtual machine backup</a> This is also mentioned by many old timers at the VMware Fusion forum. Even if you do that, you still have a problem.</p>
+<h3 id="tm-free-disk-space-management">TM free disk space management</h3>
+<p>What if you manually copy your shut down virtual machine to a separate folder, so that Time Machine can back it up. No open files, no problems right? Unfortunately here is another caveat,. A problem arises when your Time Machine backup disk starts to run out of disk space.
+The documentation says it will remove the oldest data first. It does, except when it does not.</p>
+<p>Time Machine tends to remove larger files first. That actually makes sense for a lot of media types, just not for virtual disks. The default type for virtual disks nowadays is “split into multiple files”. This means that your virtual disk is built up from big binary files also referred to as disk slices.</p>
+<p>If one disk slice is missing from your virtual disk, the risk is real that all of your data on that virtual disk is gone. Only a data recovery specialist can help you at that moment. We have a few very good ones down over at the <a href="https://communities.vmware.com/t5/VMware-Fusion/ct-p/3005-home">VMware community forum</a>, but you might want to prevent getting there.</p>
+<p>You might decide to not split your disk into multiple files. In that scenario when Time Machine decides to delete the largest file, and your virtual disk happens to be that file then everything from that Virtual Machine is gone too.</p>
+<h3 id="manual-backups">Manual backups</h3>
+<p>Of course you can make your backups manually by copying them to a static folder every now and then. This however means that you lose one of the main features of Time Machine. “Set and forget”. You now have to remember to make backups on a timely fashion.</p>
+<p>As an active community user I have seen too many people depend on Time Machine for backups of their virtual machines and lose their Virtual Machine. Please do not be that next person.</p>
+<p>Please make at the very least a manual copy on a regular bases. You can do so <a href="https://docs.vmware.com/en/VMware-Fusion/11/com.vmware.fusion.using.doc/GUID-50863728-C156-47B7-B79F-F341FF5E5C9A.html">via Finder</a>, but if you want, then you can also use Vimalin. Vimalin is fully functional for a trial period of 60 days and can make automatic backups on your behalf. After 60 days it changes into the free version. The free version has the feature to manually create and restore VMs, it is my intention to keep that functionality free.</p>
+<p>See the <a href="https://www.vimalin.com/documentation/free-versus-paid/">Free versus Paid</a> page for all the differences between the two plans.</p>
+<p>Of course I would appreciate it if you support my work on Vimalin by buying a license, but you are welcome to use the free version. That certainly is better than depending on Time Machine for your VM backups.</p>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="https://vimalindoc.kasiban.com/windows/managebackup/restore/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Restoring a backup</span></a>
+            
+            
+            <a class="nav nav-next" href="https://vimalindoc.kasiban.com/about/" aria-label="Previous page" > <span class="d-none d-md-block">About</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+       <p class="mb-md-0 mb-4">Copyright © 2021 by <a href="https://antwise.com/">Antwise Solution</a></p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.facebook.com/VimalinBackup/?ref=bookmarks" aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/VimalinBackup" aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.reddit.com/r/vimalin/" aria-label="Reddit"><i class="ti-reddit"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="https://vimalindoc.kasiban.com/js/script.min.js"></script>
+<script>
+  if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+                console.log('Service Worker Registered');
+            });
+
+        navigator.serviceWorker
+            .ready
+            .then(function(registration) {
+                console.log('Service Worker Ready');
+            });
+    }
+</script>
+  </body>
+
+</html>

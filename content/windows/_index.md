@@ -1,0 +1,40 @@
+---
+title: "Vimalin for Windows"
+date: 2021-08-29T02:23:58+02:00
+lastmod: 2021-08-29T02:23:58+02:00
+weight: "2"
+icon: "ti-microsoft-alt"
+draft: false
+description: These steps will guide you through the installation, configuration and first use of Vimalin. There are links you can follow to various help articles explaining more details.
+type: "docs"
+---
+Below are a few steps that we recommend to read on first use.
+
+These steps will guide you through the installation, configuration and first use of Vimalin. There are links you can follow to various help articles explaining more details.
+
+If you want to read the macOS documentation, then click on the apple logo at the top right.
+
+##### [Vimalin –  Installation]({{< relref "install" >}})
+
+### Configuring Vimalin
+##### [Set a backup Target]({{< relref "config/backupTarget" >}})
+
+##### [Add a virtual machine to backup]({{< relref "config/addVM" >}})
+
+### Make backups
+##### [Run a backup on demand]({{< relref "makeBackups/runBackup" >}})
+
+##### [Create a Schedule]({{< relref "makeBackups/createSchedule" >}})
+
+##### [Schedule a job]({{< relref "makeBackups/schedule" >}})
+
+##### [Configuring email notifications]({{< relref "makeBackups/configEmail" >}})
+
+### Managing backups
+##### [Deleting a backup]({{< relref "manageBackup/delete" >}})
+
+##### [Restoring a backup]({{< relref "manageBackup/restore" >}})
+
+In the backup archive you will find all options to manage your backups. Not only to delete and restore, but also for adding a note to your backup. Compress the backup to save space. View all files of the backup, the size it uses, when the backup was made. Etcetera.
+
+

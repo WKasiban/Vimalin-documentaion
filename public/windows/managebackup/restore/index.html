@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <title>Restoring a backup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="description" content="Restoring a backup - Vimalin Documentation ">
+  
+  <!-- ** CSS Plugins Needed for the Project ** -->
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://vimalindoc.kasiban.com/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="https://vimalindoc.kasiban.com/plugins/themify-icons/themify-icons.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="https://vimalindoc.kasiban.com/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <style>
+  :root{
+    --primary-color:#2979a2;
+    --body-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+    --light-color:#f8f9fa;
+    --font-family:Lato;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="https://vimalindoc.kasiban.com/css/style.min.css" rel="stylesheet" media="screen"/>
+  
+<!-- ** JS Plugins Needed for the Project ** -->
+
+<!-- jquiry -->
+<script src="https://vimalindoc.kasiban.com/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="https://vimalindoc.kasiban.com/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://vimalindoc.kasiban.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="https://vimalindoc.kasiban.com/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+
+  
+
+  <!-- create /layouts/partials/overrides/header.html in your own theme or root directory to add your custom content here -->
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://vimalindoc.kasiban.com/images/logo.jpeg" />
+  
+    
+    
+      <meta name="twitter:image" content="https://vimalindoc.kasiban.com/images/logo.jpeg"/>
+      <meta name="twitter:card" content="summary">
+    
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    
+  
+  <meta property="og:image:type" content="image/jpeg">
+
+<meta name="twitter:title" content="Restoring a backup"/>
+<meta name="twitter:description" content="This is vimalin site"/>
+
+
+
+<meta property="og:title" content="Restoring a backup" />
+<meta property="og:description" content="This is vimalin site" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vimalindoc.kasiban.com/windows/managebackup/restore/" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Restoring a backup"/>
+<meta name="twitter:description" content="This is vimalin site"/>
+
+
+</head>
+
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <img class="img-fluid" src="https://vimalindoc.kasiban.com/android-chrome-192x192.png" alt="Vimalin Documentation">
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://vimalindoc.kasiban.com/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://vimalindoc.kasiban.com/about">about</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Vimalin for Fusion
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos">Vimalin for MacOS</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/install">Installation Vimalin</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/config">Configuration Vimalin</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/makebackups">Make Backups vmware</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/managebackup">Managing Backups vmware</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Vimalin for Windows
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows">Vimalin for Workstation</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/install">Installation</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/config">Configuration</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/makebackups">Make Backups</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/managebackup">Managing Backups</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://vimalindoc.kasiban.com/faq">FAQ</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+        <a class="back-btn" href="/" aria-label="back"></a>
+          <ul class="list-styled">
+            
+            
+              
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/" title="Vimalin for Windows" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/">
+    Vimalin for Windows
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/install/" title="Installation of Vimalin" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/install/">
+    Installation of Vimalin
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/config/" title="Configuring Vimalin" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/config/">
+    Configuring Vimalin
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/config/backuptarget/" title="Set a backup target" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/config/backuptarget/">
+    Set a backup target
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/config/addvm/" title="Add a virtual machine to backup" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/config/addvm/">
+    Add a virtual machine to backup
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/makebackups/" title="Make Backups" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/makebackups/">
+    Make Backups
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/makebackups/runbackup/" title="Run a backup on demand" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/makebackups/runbackup/">
+    Run a backup on demand
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/makebackups/createschedule/" title="Create a schedule" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/makebackups/createschedule/">
+    Create a schedule
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/makebackups/schedule/" title="Schedule a job" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/makebackups/schedule/">
+    Schedule a job
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/makebackups/configemail/" title="Configuring email notifications" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/makebackups/configemail/">
+    Configuring email notifications
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/managebackup/" title="Managing backups" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/managebackup/">
+    Managing backups
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/managebackup/delete/" title="Deleting a backup" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/windows/managebackup/delete/">
+    Deleting a backup
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/windows/managebackup/restore/" title="Restoring a backup" class="sidelist
+  active">
+  <a href="https://vimalindoc.kasiban.com/windows/managebackup/restore/">
+    Restoring a backup
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5">Restoring a backup</h2>
+          
+          <div class="content"><p>Of course one of the main features is also being able to easily restore backups. This can be done from the Backup Archive via the restore button or the context menu.</p>
+<p>First go to the Backup Archive from the Options screen.</p>
+<h3 id="select-backup-to-restore">Select backup to restore</h3>
+<p>Then select backup of the virtual machine that you want to restore. For example let’s restore the “on Demand” backup at the bottom.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/Vimalin-full-size.png" alt="#" title="#"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>#</em></td>
+</tr>
+</tbody>
+</table>
+<p>Now click the Restore button.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/Vimalin-full-size.png" alt="#" title="#"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>#</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="select-location-to-restore-backup">Select location to restore backup</h3>
+<p>Once you click “Yes” you will be presented with a folder select dialog. This dialog asks where you want to restore the virtual machine.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/Vimalin-full-size.png" alt="#" title="#"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>#</em></td>
+</tr>
+</tbody>
+</table>
+<p>In this example we are going to restore the virtual machine in the same folder as where the original VM lives. Click “Open” and the restore starts.</p>
+<p>This might take a while, the progress bar gives an indication on the status of the restore process.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/Vimalin-full-size.png" alt="#" title="#"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>#</em></td>
+</tr>
+</tbody>
+</table>
+<p>Once the backup is restored you can find it back in Finder:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/Vimalin-full-size.png" alt="#" title="#"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>#</em></td>
+</tr>
+</tbody>
+</table>
+<p>As you can see the virtual machine name has a timestamp suffix. This looks like ” – backup yyyy-mm-dd” where the time is used from when the backup was taken. It also changes the name of the VM in the virtual machine configuration file in a similar fashion. This is so you can easily pick out your restored backup and to prevent overwriting existing virtual machines. If you run it again, it would add a “(1)” suffix to the suffix.</p>
+<p>Now you can open the restored virtual machine in <a href="https://www.vmware.com/products/fusion.html">VMware Fusion</a> either via double click in Finder or via the File -&gt; Open menu in VMware Fusion.</p>
+<p>After that you’ll get:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/Vimalin-full-size.png" alt="#" title="#"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>#</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="https://vimalindoc.kasiban.com/windows/managebackup/delete/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Deleting a backup</span></a>
+            
+            
+            <a class="nav nav-next" href="https://vimalindoc.kasiban.com/timemachine/" aria-label="Previous page" > <span class="d-none d-md-block">What is wrong with Time Machine?</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+       <p class="mb-md-0 mb-4">Copyright © 2021 by <a href="https://antwise.com/">Antwise Solution</a></p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.facebook.com/VimalinBackup/?ref=bookmarks" aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/VimalinBackup" aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.reddit.com/r/vimalin/" aria-label="Reddit"><i class="ti-reddit"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="https://vimalindoc.kasiban.com/js/script.min.js"></script>
+<script>
+  if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+                console.log('Service Worker Registered');
+            });
+
+        navigator.serviceWorker
+            .ready
+            .then(function(registration) {
+                console.log('Service Worker Ready');
+            });
+    }
+</script>
+  </body>
+
+</html>

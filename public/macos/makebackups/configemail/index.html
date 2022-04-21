@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <title>Configuring email notification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="description" content="Configuring email notification - Vimalin Documentation ">
+  
+  <!-- ** CSS Plugins Needed for the Project ** -->
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://vimalindoc.kasiban.com/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="https://vimalindoc.kasiban.com/plugins/themify-icons/themify-icons.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="https://vimalindoc.kasiban.com/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <style>
+  :root{
+    --primary-color:#2979a2;
+    --body-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+    --light-color:#f8f9fa;
+    --font-family:Lato;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="https://vimalindoc.kasiban.com/css/style.min.css" rel="stylesheet" media="screen"/>
+  
+<!-- ** JS Plugins Needed for the Project ** -->
+
+<!-- jquiry -->
+<script src="https://vimalindoc.kasiban.com/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="https://vimalindoc.kasiban.com/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://vimalindoc.kasiban.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="https://vimalindoc.kasiban.com/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+
+  
+
+  <!-- create /layouts/partials/overrides/header.html in your own theme or root directory to add your custom content here -->
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://vimalindoc.kasiban.com/images/logo.jpeg" />
+  
+    
+    
+      <meta name="twitter:image" content="https://vimalindoc.kasiban.com/images/logo.jpeg"/>
+      <meta name="twitter:card" content="summary">
+    
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    
+  
+  <meta property="og:image:type" content="image/jpeg">
+
+<meta name="twitter:title" content="Configuring email notification"/>
+<meta name="twitter:description" content="This is vimalin site"/>
+
+
+
+<meta property="og:title" content="Configuring email notification" />
+<meta property="og:description" content="This is vimalin site" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vimalindoc.kasiban.com/macos/makebackups/configemail/" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Configuring email notification"/>
+<meta name="twitter:description" content="This is vimalin site"/>
+
+
+</head>
+
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <img class="img-fluid" src="https://vimalindoc.kasiban.com/android-chrome-192x192.png" alt="Vimalin Documentation">
+      
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://vimalindoc.kasiban.com/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://vimalindoc.kasiban.com/about">about</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Vimalin for Fusion
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos">Vimalin for MacOS</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/install">Installation Vimalin</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/config">Configuration Vimalin</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/makebackups">Make Backups vmware</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/macos/managebackup">Managing Backups vmware</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Vimalin for Windows
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows">Vimalin for Workstation</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/install">Installation</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/config">Configuration</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/makebackups">Make Backups</a>
+            
+            <a class="dropdown-item" href="https://vimalindoc.kasiban.com/windows/managebackup">Managing Backups</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://vimalindoc.kasiban.com/faq">FAQ</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+        <a class="back-btn" href="/" aria-label="back"></a>
+          <ul class="list-styled">
+            
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/" title="Vimalin for Fusion" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/">
+    Vimalin for Fusion
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/install/" title="Installation of Vimalin" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/install/">
+    Installation of Vimalin
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/config/" title="Configuring Vimalin" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/config/">
+    Configuring Vimalin
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/config/backuptarget/" title="Set a backup target" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/config/backuptarget/">
+    Set a backup target
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/config/addvm/" title="Add a virtual machine to backup" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/config/addvm/">
+    Add a virtual machine to backup
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/makebackups/" title="Make Backups" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/makebackups/">
+    Make Backups
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/makebackups/runbackup/" title="Run a backup on demand" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/makebackups/runbackup/">
+    Run a backup on demand
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/makebackups/createschedule/" title="Create a Schedule" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/makebackups/createschedule/">
+    Create a Schedule
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/makebackups/schedule/" title="Schedule a job" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/makebackups/schedule/">
+    Schedule a job
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/makebackups/configemail/" title="Configuring email notification" class="sidelist
+  active">
+  <a href="https://vimalindoc.kasiban.com/macos/makebackups/configemail/">
+    Configuring email notification
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/managebackup/" title="Managing Backup" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/managebackup/">
+    Managing Backup
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/managebackup/delete/" title="Deleting a backup" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/managebackup/delete/">
+    Deleting a backup
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://vimalindoc.kasiban.com/macos/managebackup/restore/" title="Restoring a backup" class="sidelist
+  ">
+  <a href="https://vimalindoc.kasiban.com/macos/managebackup/restore/">
+    Restoring a backup
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5">Configuring email notification</h2>
+          
+          <div class="content"><p>In the options page you will also find the icon for setting up email confirmations.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="Vimalin-2-Options-screen.jpg" alt="Vimalin Options Screen" title="Vimalin Options Screen"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>Vimalin Options Screen</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="configure-email-accounts">Configure email accounts</h3>
+<p>The following screen appears after clicking the icon for Email Settings.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="Vimalin-2-email-settings-page1.jpg" alt="Vimalin Email Settings – Email Accounts tab page" title="Vimalin Email Settings – Email Accounts tab page"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>Vimalin Email Settings – Email Accounts tab page</em></td>
+</tr>
+</tbody>
+</table>
+<p>On this tab page you can fill in the email addresses and names to use. Vimalin then uses this for the sender of the email (example above: Vimalin Backup) and the email box where you want to receive your notifications.</p>
+<h3 id="configure-email-server">Configure email server</h3>
+<p>Once done go to the following tab page to enter the email server details.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="Vimalin-2-email-settings-page2.jpg" alt="Email Settings – Email Server configuration tab page" title="Email Settings – Email Server configuration tab page"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>Email Settings – Email Server configuration tab page</em></td>
+</tr>
+</tbody>
+</table>
+<p>Enter the address of the email server (smtp server) that you want to use for sending the emails. It will be different from the example that is displayed here. Also provide the login name and password that might be required for sending the emails.</p>
+<p>Finally select the smtp server port. Note that nowadays port 25 is commonly blocked by providers. So unless you are using the email server of your internet provider, you will likely have to use either port 465 or port 587.</p>
+<p>Select the appropriate encryption if the connection to your email server is encrypted.</p>
+<p>After you entered the email details, you can test your settings by pressing the “Test Settings” button. Vimalin will then try to send a test email via your email server to check if things are setup correctly.</p>
+<p>Please first check your spam folder if Vimalin says “message send” and you haven’t received anything.</p>
+<h3 id="configure-email-notifications">Configure email notifications</h3>
+<p>Finally once all that works, you can tweak your email notification settings at the last tab page.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="Vimalin-2-email-settings-page3.jpg" alt="Email Settings – Message Details tab page" title="Email Settings – Message Details tab page"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>Email Settings – Message Details tab page</em></td>
+</tr>
+</tbody>
+</table>
+<p>Here you can configure when Vimalin should send you an email. The subject line can be customized with a subject prefix that you want the subject of your email to start with.</p>
+<p>This feature allows you to setup email filters in your email program. With email filters you can manage how-to handle the backup confirmation success, fail or warning messages.</p>
+<h3 id="google-email-setup">Google email setup</h3>
+<p>Google has been tying up their email server access and nowadays requires you to use something they call “Sign in with Google”. Google requires apps using that option to be certified, which sadly is extremely expensive.
+However there is an alternative option and it is called App passwords.</p>
+<p>You can read more about it here: Google Sign in with <a href="https://support.google.com/accounts/answer/185833">App passwords</a></p>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="https://vimalindoc.kasiban.com/macos/makebackups/schedule/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Schedule a job</span></a>
+            
+            
+            <a class="nav nav-next" href="https://vimalindoc.kasiban.com/macos/managebackup/" aria-label="Previous page" > <span class="d-none d-md-block">Managing Backup</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+       <p class="mb-md-0 mb-4">Copyright © 2021 by <a href="https://antwise.com/">Antwise Solution</a></p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.facebook.com/VimalinBackup/?ref=bookmarks" aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/VimalinBackup" aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.reddit.com/r/vimalin/" aria-label="Reddit"><i class="ti-reddit"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="https://vimalindoc.kasiban.com/js/script.min.js"></script>
+<script>
+  if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+                console.log('Service Worker Registered');
+            });
+
+        navigator.serviceWorker
+            .ready
+            .then(function(registration) {
+                console.log('Service Worker Ready');
+            });
+    }
+</script>
+  </body>
+
+</html>

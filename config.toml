@@ -1,0 +1,169 @@
+baseURL = 'https://vimalindoc.kasiban.com'
+languageCode = 'en-us'
+title = 'Vimalin Documentation'
+theme = 'dot'
+disableLanguages = []
+
+############################# Default Parameters ##########################
+[params]
+# logo is for all page
+logo = "android-chrome-192x192.png"
+# logo white is for homepage logo, you can use colorful logo too...
+logo_white = "android-chrome-192x192.png"
+# when logo is empty, it will shown your site title
+
+# OpenGraph / Twitter Card metadata
+description = "This is vimalin site"
+author = "Wil van Antwerpen"
+image = "images/logo.jpeg" # this image will be used as fallback if a page has no image of its own
+
+# customize color
+primary_color = "#2979a2"
+body_color = "#f9f9f9"
+text_color = "#636363"
+text_color_dark = "#242738"
+white_color = "#ffffff"
+light_color = "#f8f9fa"
+
+# font family
+font_family = "lato" # Choose font family from : https://fonts.google.com/
+
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+
+# external link
+affiliate_link = "https://www.vimalin.com/downloads/"
+
+
+############################## social links ##############################
+[[params.social]]
+icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
+name = "Facebook"
+link = "https://www.facebook.com/VimalinBackup/?ref=bookmarks"
+
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
+name = "Twitter"
+link = "https://twitter.com/VimalinBackup"
+  
+[[params.social]]
+icon = "ti-reddit" # themify icon pack : https://themify.me/themify-icons
+name = "Reddit"
+link = "https://www.reddit.com/r/vimalin/"
+
+
+################################ English Language ######################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+weight = 1
+copyright = "Copyright &copy; 2021 by [Antwise Solution](https://antwise.com/)"
+
+# banner
+[Languages.en.params.banner]
+title = "Vimalin"
+subtitle = "VM Backups for VMware Desktop"
+bg_image = "images/nature.jpg"
+placeholder = "Have a question? Just ask here or enter terms"
+
+# call to action
+[Languages.en.params.cta]
+enable = true
+title = "What is Vimalin?"
+content = "Vimalin is a virtual machine backup program for VMware Fusion, VMware Workstation and VMware Player. With Vimalin you can make backups with your VM running."
+# call to action button
+[Languages.en.params.cta.button]
+enable = true
+label = "Download Vimalin"
+link = "https://www.vimalin.com/downloads/"
+
+
+################## english navigation #################
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "about"
+url = "about"
+weight = 2
+
+# Dropdown menu
+[[menu.main]]
+weight = 3
+name = "Vimalin for Fusion"
+hasChildren = true
+
+  [[menu.main]]
+  parent = "Vimalin for Fusion"
+  name = "Vimalin for MacOS"
+  url = "macos"
+  weight = 1
+
+  [[menu.main]]
+  parent = "Vimalin for Fusion"
+  name = "Installation Vimalin"
+  url = "macos/install"
+  weight = 2
+
+  [[menu.main]]
+  parent = "Vimalin for Fusion"
+  name = "Configuration Vimalin"
+  url = "macos/config"
+  weight = 3
+
+  [[menu.main]]
+  parent = "Vimalin for Fusion"
+  name = "Make Backups vmware"
+  url = "macos/makebackups"
+  weight = 4
+
+  [[menu.main]]
+  parent = "Vimalin for Fusion"
+  name = "Managing Backups vmware"
+  url = "macos/managebackup"
+  weight = 5
+
+[[menu.main]]
+weight = 4
+name = "Vimalin for Windows"
+hasChildren = true
+
+  [[menu.main]]
+  parent = "Vimalin for Windows"
+  name = "Vimalin for Workstation"
+  url = "windows"
+  weight = 5
+
+  [[menu.main]]
+  parent = "Vimalin for Windows"
+  name = "Installation"
+  url = "windows/install"
+  weight = 6
+
+  [[menu.main]]
+  parent = "Vimalin for Windows"
+  name = "Configuration"
+  url = "windows/config"
+  weight = 7
+
+  [[menu.main]]
+  parent = "Vimalin for Windows"
+  name = "Make Backups"
+  url = "windows/makebackups"
+  weight = 8
+
+  [[menu.main]]
+  parent = "Vimalin for Windows"
+  name = "Managing Backups"
+  url = "windows/managebackup"
+  weight = 9
+
+[[menu.main]]
+name = "FAQ"
+url = "faq"
+weight = 5
+
+
+
